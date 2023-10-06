@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="webcss.css">
+    <script src="jvscrpt.js"></script>
 </head>
 <body>
   <nav>
@@ -22,33 +23,60 @@
     <form>
             <h2></h2>
              <div>Name:
-              <input type="text" class="personal" placeholder="First name/Last name">
-            <div>Enter your email here:
-              <input type="text" class="personal" placeholder="Your email">
+              <input type="text" class="personal" id="name" placeholder="First name/Last name">
+            <div><br>Enter your email here:
+              <input type="text" class="personal" id="email" placeholder="Your email">
             </div>
-                <div>Size of artwork:
-              <input type="number" placeholder="In pixels/cm/in.">
-               </div>
-               <div>I'm looking to invest:
-              <input type="number" placeholder="$USD">
-               </div>
                <form action="">
-                 What type of art?<br>
-            <input type="radio" name="art" value="traditional"> Traditional<br>
-            <input type="radio" name="art" value="digital"> Digital<br>
-            <input type="radio" name="art" value="other"> Other
+                 <br>Art Size:<br>
+            <input type="radio" name="size" value="10"> Profile ($10)
+            <input type="radio" name="size" value="20"> Half Body ($20)
+            <input type="radio" name="size" value="30"> Full Body ($30)
           </form>
-                   <div>Commission Details:
-              <input type="text" class=details placeholder="Type out specifics here.">
+          <form action="">
+              <br>Art Quality:<br>
+            <input type="radio" name="quality" value="10"> Sketch ($10)
+            <input type="radio" name="quality" value="20"> Flat Color ($20)
+            <input type="radio" name="quality" value="30"> Full Color ($30)
+          </form>
+          <form action="">
+            <br>Additional Details:<br>
+          <input type="radio" name="add" value="0"> No Background ($0)
+          <input type="radio" name="add" value="5"> Flat Background ($5)
+          <input type="radio" name="add" value="15"> Detailed Background ($15)
+        </form>
+
+          <form action="">
+            <br>Payment via:<br>
+          <input type="radio" name="payment" value="GCash"> GCash
+          <input type="radio" name="payment" value="PayMaya"> PayMaya
+          <input type="radio" name="payment" value="Visa"> Visa
+          <input type="radio" name="payment" value="MasterCard"> Master Card
+        </form>
+        <br><div>Commission Details:<br>
+              <textarea class=details rows="5" cols="50" name="details" placeholder="Type out specifics of your commission here."></textarea>
             </div>
                <br>
             <div class="buttons">
-              <button style="width: 50px; height: 25px;" type="submit" class="enter"><strong>Send</strong></button>
-              <button style="width: 50px; height: 25px;" type="reset" class="reset"><strong>Reset</strong></button>
+              <button style="width: 50px; height: 25px;" type="button" class="enter" onclick="showPopup()"><strong>Send</strong></button>
+              <div id="popup" class="popup-container">
+                
+                <div class="popup-content">
+                 <br>  
+                <p id="nameresult"></p>
+                <p id="emailresult"></p>
+                <p id="paymentresult"></p>
+                <p id="result"></p>
+                    <button onclick="hidePopup()">Confirm</button>
+                </div>
+            </div>
+
+              <button style="width: 50px; height: 25px;" type="submit" class="reset"><strong>Reset</strong></button>
             </div>
              </div> 
           </div>
     </form></div>
+
     <br>
     <div class="container3" style="top: 30px; height: 150px;">
       <br>
