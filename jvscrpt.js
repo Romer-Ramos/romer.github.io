@@ -26,6 +26,7 @@ document.getElementById("popup").style.display = "block";
     } else {
         document.getElementById("result").textContent = "Total Price of your Commission: No options selected";
     }
+        
         const nameElement = document.getElementById("name");
 
         const nameValue = nameElement.value;
@@ -39,6 +40,13 @@ document.getElementById("popup").style.display = "block";
 
         const emailresultElement = document.getElementById("emailresult");
         emailresultElement.textContent = `Email: ${emailValue}`;
+
+        const charElement = document.getElementById("char");
+
+        const charValue = charElement.value;
+
+        const charresultElement = document.getElementById("charresult");
+        charresultElement.textContent = `Character to draw: ${charValue}`;
 
         const radioButtons = document.getElementsByName("payment");
             
@@ -60,4 +68,25 @@ document.getElementById("popup").style.display = "block";
 
 function hidePopup() {
     document.getElementById("popup").style.display = "none";
+}
+
+function openModal(imageSrc) {
+    var modal = document.getElementById("myModal");
+    var modalImage = document.getElementById("modalImage");
+    modalImage.src = imageSrc;
+    modal.style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
+
+// Close the modal if the user clicks outside of it
+window.onclick = function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }

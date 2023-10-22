@@ -10,7 +10,8 @@
 <body>
   <nav>
     <ul>
-        <li><a href="Main.html"><img src="electro-symbol.png" width="25px"> Home</a></li>
+        <li><a href="Main.html"><img src="logowhite-removebg-preview.png" width="120px"></li>
+        <li><a href="Main.html">Home</a></li>
         <li><a href="Webpage1.html">Gallery</a></li>
         <li><a href="Webpage2.html">Artist Info</a></li>
         <li><a href="Webpage3.html">Request Commision</a></li>
@@ -18,21 +19,27 @@
 </nav>
     <div class="title">
         <h1><b>Commission Request Form</b></h1>
+    
     </div>
     <div class="form">
     <form>
             <h2></h2>
-             <div>Name:
+             <div>Enter your name:
               <input type="text" class="personal" id="name" placeholder="First name/Last name">
-            <div><br>Enter your email here:
+            <div><br>Enter your email:
               <input type="text" class="personal" id="email" placeholder="Your email">
+            <div><br>Character to draw:
+                <input type="text" style="width: 30%" class="personal" id="char" placeholder="Any Character and Origin">
             </div>
+            <img src="ayaka-size.png" style="width: 20%; margin-left: 40%;">
+            
                <form action="">
-                 <br>Art Size:<br>
+            Art Size:<br>
             <input type="radio" name="size" value="10"> Profile ($10)
             <input type="radio" name="size" value="20"> Half Body ($20)
             <input type="radio" name="size" value="30"> Full Body ($30)
           </form>
+          <img src="ayaka-collage4.png">  
           <form action="">
               <br>Art Quality:<br>
             <input type="radio" name="quality" value="10"> Sketch ($10)
@@ -58,20 +65,22 @@
             </div>
                <br>
             <div class="buttons">
-              <button style="width: 50px; height: 25px;" type="button" class="enter" onclick="showPopup()"><strong>Send</strong></button>
+              <button style="width: 60px; height: 30px;" type="button" class="enter" onclick="showPopup()"><strong>Send</strong></button>
               <div id="popup" class="popup-container">
                 
                 <div class="popup-content">
-                 <br>  
+                <p align="center">Commision Details:</p> 
                 <p id="nameresult"></p>
                 <p id="emailresult"></p>
+                <p id="charresult"></p>
                 <p id="paymentresult"></p>
                 <p id="result"></p>
-                    <button onclick="hidePopup()">Confirm</button>
+                  <div style="text-align: center;">
+                    <button onclick="hidePopup()">Confirm</button></div>
                 </div>
             </div>
 
-              <button style="width: 50px; height: 25px;" type="submit" class="reset"><strong>Reset</strong></button>
+              <button style="width: 60px; height: 30px;" type="submit" class="reset"><strong>Reset</strong></button>
             </div>
              </div> 
           </div>
@@ -80,7 +89,7 @@
     <br>
     <div class="container3" style="top: 30px; height: 150px;">
       <br>
-      <a href="Main.html"><button style="width: 200px; height: 50px;"><b>Go back to home page</b></button></a>
+      <a href="#"><button style="width: 200px; height: 50px;"><b>Go back to the top</b></button></a>
       <br>
   </div>
 </body>
