@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission</title>
+    <link rel="stylesheet" type="text/css" href="webcss.css">
+    <script src="jvscrpt.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="index.html"><img src="Pictures/logowhite-removebg-preview.png" width="120px"></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="webpage1.html">Gallery</a></li>
+        <li><a href="webpage2.html">Artist Info</a></li>
+        <li><a href="webpage3.html">Request Commision</a></li>
+    </ul>
+</nav>
+    <div class="title">
+        <h1><b>Commission Request Form</b></h1>
+    
+    </div>
+    <div class="form">
+    <form>
+            <h2></h2>
+             <div>Enter your name:
+              <input type="text" class="personal" id="name" placeholder="First name/Last name">
+            <div><br>Enter your email:
+              <input type="text" class="personal" id="email" placeholder="Your email">
+            <div><br>Character to draw:
+                <input type="text" style="width: 30%" class="personal" id="char" placeholder="Any Character and Origin">
+            </div>
+            <img src="Pictures/ayaka-size.png" style="width: 20%; margin-left: 40%;">
+            
+               <form action="">
+            Art Size:<br>
+            <input type="radio" name="size" value="10"> Profile ($10)
+            <input type="radio" name="size" value="20"> Half Body ($20)
+            <input type="radio" name="size" value="30"> Full Body ($30)
+          </form>
+          <img src="Pictures/ayaka-collage4.png">  
+          <form action="">
+              <br>Art Quality:<br>
+            <input type="radio" name="quality" value="10"> Sketch ($10)
+            <input type="radio" name="quality" value="20"> Flat Color ($20)
+            <input type="radio" name="quality" value="30"> Full Color ($30)
+          </form>
+          <form action="">
+            <br>Additional Details:<br>
+          <input type="radio" name="add" value="0"> No Background ($0)
+          <input type="radio" name="add" value="5"> Flat Background ($5)
+          <input type="radio" name="add" value="15"> Detailed Background ($15)
+        </form>
+
+          <form action="">
+            <br>Payment via:<br>
+          <input type="radio" name="payment" value="GCash"> GCash
+          <input type="radio" name="payment" value="PayMaya"> PayMaya
+          <input type="radio" name="payment" value="Visa"> Visa
+          <input type="radio" name="payment" value="MasterCard"> Master Card
+        </form>
+        <br><div>Commission Details:<br>
+              <textarea class=details rows="5" cols="50" name="details" placeholder="Type out specifics of your commission here."></textarea>
+            </div>
+               <br>
+            <div class="buttons">
+              <button style="width: 60px; height: 30px;" type="button" class="enter" onclick="showPopup()"><strong>Send</strong></button>
+              <div id="popup" class="popup-container">
+                
+                <div class="popup-content">
+                <p align="center">Commision Details:</p> 
+                <p id="nameresult"></p>
+                <p id="emailresult"></p>
+                <p id="charresult"></p>
+                <p id="paymentresult"></p>
+                <p id="result"></p>
+                  <div style="text-align: center;">
+                    <button onclick="hidePopup()">Confirm</button></div>
+                </div>
+            </div>
+
+              <button style="width: 60px; height: 30px;" type="submit" class="reset"><strong>Reset</strong></button>
+            </div>
+             </div> 
+          </div>
+    </form></div>
+
+    <br>
+    <div class="container3" style="top: 30px; height: 150px;">
+      <br>
+      <a href="#"><button style="width: 200px; height: 50px;"><b>Go back to the top</b></button></a>
+      <br>
+  </div>
+</body>
+</html>

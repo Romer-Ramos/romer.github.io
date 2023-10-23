@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" type="text/css" href="webcss.css">
+    <script src="jvscrpt.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="Pictures/logowhite-removebg-preview.png" width="120px"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="webpage1.html">Gallery</a></li>
+            <li><a href="webpage2.html">Artist Info</a></li>
+            <li><a href="webpage3.html">Request Commision</a></li>
+        </ul>
+    </nav>
+    <div class="title">
+        <br>
+        <h1><b>Art Gallery</b></h1>
+        <table>
+            <tr>
+            <td><img src="Pictures/YaeMiko.jfif" onclick="openModal('Pictures/YaeMiko.jfif')"></td>
+            <td><img src="Pictures/HuTao.jfif" onclick="openModal('Pictures/HuTao.jfif')"></td>
+            <td><img src="Pictures/Furina.jfif" onclick="openModal('Pictures/Furina.jfif')"></td>
+            </tr>
+            <tr>
+            <td><img src="Pictures/Ayaka.jfif" onclick="openModal('Pictures/Ayaka.jfif')"></td>
+            <td><img src="Pictures/Faruzan.jfif" onclick="openModal('Pictures/Faruzan.jfif')"></td>
+            <td><img src="Pictures/Nilou.jfif" onclick="openModal('Pictures/Nilou.jfif')"></td>
+            </tr>
+            <tr>
+            <td><img src="Pictures/March.jfif" onclick="openModal('Pictures/March.jfif')"></td>
+            <td><img src="Pictures/Keqing.jfif" onclick="openModal('Pictures/Keqing.jfif')"></td>
+            <td><img src="Pictures/Ganyu.jfif" onclick="openModal('Pictures/Ganyu.jfif')"></td>
+            </tr>
+        </table>   
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span onclick="closeModal()" style="float: right; cursor: pointer;">&times;</span>
+                    <img id="modalImage" src="" alt="Popup Image">
+                </div>
+            </div>
+            <p><i>*NOTE: I do not own any of this art. It only serves as placeholder*</i></p>
+
+
+        </div>
+        <div class="container3" style="top: 10px; height: 150px;">
+            <br>
+            <a href="#"><button style="width: 200px; height: 50px;"><b>Go back to the top</b></button></a>
+            <br>
+        </div>
+</body>
+</html>
