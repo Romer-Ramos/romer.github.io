@@ -7,8 +7,6 @@
     font-family: 'genshin-font';
     box-sizing: border-box;
 }
-
-
     
 .navcon{
     width: 100%;
@@ -22,13 +20,15 @@
     margin: 0;
 }
 
-.navcon img{
+.logo{
     width: 8em;
-    margin: 0 3em;
+    margin: 5px 1em;
     cursor: pointer
 }
 
 .menu-icon{
+    width: 2em;
+    cursor: pointer;
     display: none;
 }
 
@@ -58,26 +58,7 @@ nav ul li a{
     color: white;
 }
 
-@media only screen and (max-width:700px){
-    nav ul{
-        width: 100%;
-        position: absolute;
-        top: 3em;
-        right: 0;
-        z-index: 2;
-        background: violet;
-    }
 
-    nav ul li{
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .menu-icon{
-        display: block;
-    }
-}
 
 body {
     background-image: url('Pictures/newsakurabg.jpg');
@@ -510,3 +491,127 @@ table img {
     max-width: 100%;
     height: auto;
         }
+
+@media only screen and (max-width:700px){
+
+    .navcon{
+        width: 100%;
+        min-height: 3em;
+        padding-left: 5%;
+        padding-right: 5%;
+        overflow: hidden;
+        background-image: url(Pictures/banner.jpg);
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .logo{
+        width: 3em;
+        margin: 5px 1em;
+        cursor: pointer
+    }
+
+    nav ul{
+        width: 100%;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        background: violet;
+        text-align: left;
+    }
+
+    nav ul li{
+        font-size: 5px;
+        top: 30em;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+
+    .container{
+        position: absolute;
+        width: 100%;
+        height: 60em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-container{
+        position: absolute;
+        font-size: small;
+        top: 8%;
+        right: 5%;
+        z-index: 1; 
+        padding: 5px; 
+        margin: 3%;
+        color: white;
+    }
+    
+    .container2{
+        text-align: center;
+        position: relative;
+        width: 100%;
+        height: 50em;
+        background-image:url(Pictures/Cherry_Blossom_46_B.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: 0%;
+        top: 40em;
+    }
+    
+    .container2 img {
+        width: 50%; 
+        height: auto; 
+        position: relative;
+        margin-left: 20%; 
+        margin-bottom: 5%;
+        left: 5%;
+        top: 5%;  
+        z-index: 1;
+        border: 3px solid black;
+    }
+    
+    .container2 button{
+        position: relative;
+        text-align: center;
+        border: 2px solid #000; 
+        background-color: blueviolet;
+        width: 100px;
+        height: 50px;
+        margin-right: 1%;
+        margin-top: 10%;
+    }
+
+    .container2p {
+    text-align: center;
+    position: relative;
+    font-size: small;
+    width: 100%;
+    height: 50em;
+    background-image:url(Pictures/light-violtbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0%;
+    top: 30em;
+    padding-top: 1%;
+    }
+
+    .container2p img{
+        position: absolute;
+        width: 80%;
+        height: auto;
+        z-index: 1;   
+    }
+
+    .container2p h1{
+        margin-top: 8em;
+    }    
+
+    .container2p p{
+        margin-top: 12em;
+        font-size: small;          
+    }    
+}
