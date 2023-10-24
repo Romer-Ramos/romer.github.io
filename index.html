@@ -7,17 +7,23 @@
     <title>Main Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="webcss.css">
+    <script src="jvscrpt.js"></script>
 </head>
 <body>
+    <div class="navcon">
+        <div class="navbar">
+    <a href="index.html"><img src="Pictures/logowhite-removebg-preview.png">
     <nav>
-        <ul>
-            <li><a href="index.html"><img src="Pictures/logowhite-removebg-preview.png" width="120px"></li>
+        <ul id="menulist">
             <li><a href="index.html">Home</a></li>
             <li><a href="webpage1.html">Gallery</a></li>
             <li><a href="webpage2.html">Artist Info</a></li>
             <li><a href="webpage3.html">Request Commision</a></li>
         </ul>
     </nav>
+    <img src="Pictures/electro-symbol.png" class="menu-icon" style="width: 2em" onclick="togglemenu()">
+    </div>
+    </div>
         <div class="logo">
             <img src="Pictures/logowhite-removebg-preview.png">
         </div>
@@ -25,6 +31,7 @@
         <div class="container">    
             <div class="title">
         <img src="Pictures/raiden2.png" alt="Raiden">
+
         <div class="text-container">
         <h2><i> Art Portfolio Website </i></h2>
         <p>This is an Art Portfolio/Gallery Website, </p>
@@ -66,6 +73,12 @@
 </div>
     
 <div class="container3">
+    <br>
+    <h1>Play Audio:</h1>
+    <audio controls autoplay>
+    <source src="Pictures/Genshin-theme.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
     <br>
     <h1>Find me in:</h1>
     <a href="https://www.facebook.com/romer.ramos.942/"><button style="width: 150px; height: 50px;"><i class="fa-brands fa-facebook"> Facebook</i></button></a>
