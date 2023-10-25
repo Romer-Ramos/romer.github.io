@@ -110,9 +110,10 @@ a:hover {
 
 .container img {
     cursor: pointer;
-    width: 65%; 
+    width: 65%;
+    max-width: fit-content;
     height: auto; 
-    position: absolute; 
+    position:absolute; 
     left: 5%;
     top: 5%;
     z-index: -1; 
@@ -133,6 +134,7 @@ a:hover {
 
 .container2 img {
     width: 30%; 
+    max-width: fit-content;
     height: auto; 
     float: left;
     position: relative;
@@ -140,7 +142,7 @@ a:hover {
     margin-bottom: 5%;
     left: 0%;
     top: 5%;  
-    z-index: 1;
+    z-index: 0;
     border: 3px solid black;
 }
 
@@ -170,15 +172,16 @@ a:hover {
 .container2p img{
     position: absolute;
     width: 32%;
+    max-width: fit-content;
     height: auto;
     left: 13%;
-    z-index: 1;
+    z-index: 0;
 }
 
-.container2p h1{
+.container2p h2{
     position: absolute;
     top: 8%;
-    right: 18%;
+    right: 21%;
     z-index: 1; 
     padding: 5px; 
     margin: 3%;
@@ -276,8 +279,8 @@ button:hover{
 
 .profile-text .imgbox{
     position: relative;
-    width: 180px;
-    height: 180px;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -523,7 +526,7 @@ table img {
     }
 
     nav ul li{
-        font-size: 5px;
+        font-size: 0.55em;
         top: 30em;
     }
 
@@ -580,6 +583,14 @@ table img {
         margin-top: 10%;
     }
 
+    .container2 h2{
+        font-size: medium;
+    }
+
+    .container2 p{
+        font-size: small;
+    }
+
     .container2p {
     font-size: small;
     width: 100%;
@@ -596,13 +607,16 @@ table img {
         z-index: 1;   
     }
 
-    .container2p h1{
-        margin-top: 9em;
+    .container2p h2{
+        margin-top: 13em;
+        margin-right: 2em;
+
     }    
 
     .container2p p{
-        margin-top: 13.5em;
-        font-size: small;          
+        margin-top: 20em;
+        margin-left: 1.5em;
+        font-size: 0.8em;          
     }    
 
     .shogun {
@@ -618,6 +632,33 @@ table img {
     .container3{
         top: 20em;
     }
+    
+    h1{
+        font-size: medium;
+    }
 
+    .form {
+        font-size: small;
+    }
 
+    .ncontainer{
+        margin: 1em;
+        width: 90%;
+    }
+
+    .ncontainer p{
+        font-size: small;
+    }
+
+    .ncontainer ul li{
+        font-size: small;
+    } 
+
+    .ncontainer h2{
+        font-size: medium;
+    } 
+
+    .right_side ul li{
+        font-size: small
+    } 
 }
